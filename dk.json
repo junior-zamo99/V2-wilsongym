@@ -1,0 +1,116 @@
+{
+  "Usuario": [
+    {
+      "id": 1,
+      "nombre": "juan perez",
+      "ci": "1234567",
+      "telefono": "+1234567890",
+      "email": "juanperez@example.com",
+      "usuario": "juanperez"
+    },
+    {
+      "id": 2,
+      "nombre": "maria gonzalez",
+      "ci": "2345678",
+      "telefono": "+2345678901",
+      "email": "mariagonzalez@example.com",
+      "usuario": "mariagonzalez"
+    },
+    {
+      "id": 3,
+      "nombre": "carlos sanchez",
+      "ci": "3456789",
+      "telefono": "+3456789012",
+      "email": "carlossanchez@example.com",
+      "usuario": "carlossanchez"
+    },
+    {
+      "id": 4,
+      "nombre": "ana martinez",
+      "ci": "4567890",
+      "telefono": "+4567890123",
+      "email": "anamartinez@example.com",
+      "usuario": "anamartinez"
+    },
+    {
+      "id": 5,
+      "nombre": "luis rodriguez",
+      "ci": "5678901",
+      "telefono": "+5678901234",
+      "email": "luisrodriguez@example.com",
+      "usuario": "luisrodriguez"
+    },
+    {
+      "id": 6,
+      "nombre": "pablo fernandez",
+      "ci": "6789012",
+      "telefono": "+6789012345",
+      "email": "pablofernandez@example.com",
+      "usuario": "pablofernandez"
+    },
+    {
+      "id": 7,
+      "nombre": "laura lopez",
+      "ci": "7890123",
+      "telefono": "+7890123456",
+      "email": "lauralopez@example.com",
+      "usuario": "lauralopez"
+    },
+    {
+      "id": 8,
+      "nombre": "diego ramirez",
+      "ci": "8901234",
+      "telefono": "+8901234567",
+      "email": "diegoramirez@example.com",
+      "usuario": "diegoramirez"
+    },
+    {
+      "id": 9,
+      "nombre": "elena gomez",
+      "ci": "9012345",
+      "telefono": "+9012345678",
+      "email": "elenagomez@example.com",
+      "usuario": "elenagomez"
+    },
+    {
+      "id": 10,
+      "nombre": "oscar torres",
+      "ci": "0123456",
+      "telefono": "+0123456789",
+      "email": "oscartorres@example.com",
+      "usuario": "oscartorres"
+    },
+    {
+      "nombre": "prueba",
+      "usuario": "prueba",
+      "email": "mundonet002+452929@gmail.com",
+      "telefono": "1313234",
+      "ci": "1234",
+      "id": 11
+    },
+    {
+      "nombre": "Junior",
+      "usuario": "asdwe",
+      "email": "junior.zf.99@gmail.com",
+      "telefono": "422424",
+      "ci": "123434",
+      "id": 12
+    },
+    {
+      "nombre": "Junior zamo",
+      "usuario": "sadasdasd",
+      "email": "A2NGJJCDM@juanpa.bar",
+      "telefono": "123123",
+      "ci": "234342",
+      "id": 13
+    },
+    {
+      "nombre": "rafa",
+      "usuario": "reaffa",
+      "email": "mundonet002+946263838@gmail.com",
+      "telefono": "1313234",
+      "ci": "13613528",
+      "id": 14
+    }
+  ]
+}
