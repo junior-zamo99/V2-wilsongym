@@ -6,8 +6,8 @@ import Layout from './components/layout'
 import NuevoCliente,{action as nuevoCliente} from './pages/NuevoCliente'
 import Index,{loader as loaderUsuario} from './pages/Index'
 import PaginaError from './components/PaginaError'
-import EditarUsuario,{loader as loaderEditUser} from './pages/EditarUsuario'
-
+import EditarUsuario, {loader as loaderEditarUsuario, action as actionEditarUsuario} from './pages/EditarUsuario'
+import {action as actionDeleteUser} from "./components/Usuario"
 
 const router=createBrowserRouter([
 {
@@ -31,8 +31,14 @@ const router=createBrowserRouter([
     {
       path:'/usuario/:usuarioId/editar',
       element:<EditarUsuario/>,
-      loader: loaderEditUser
+      loader: loaderEditarUsuario,
+      action: actionEditarUsuario
     },
+    {
+      path:'/usuario/:usuarioId/eliminar',
+      action: actionDeleteUser
+
+    }
   ]
 },
 

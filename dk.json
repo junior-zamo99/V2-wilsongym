@@ -1,12 +1,12 @@
 {
   "Usuario": [
     {
-      "id": 1,
-      "nombre": "juan perez",
-      "ci": "1234567",
-      "telefono": "+1234567890",
+      "nombre": "juan perez dominguez messi",
+      "usuario": "juanperez",
       "email": "juanperez@example.com",
-      "usuario": "juanperez"
+      "telefono": "+1234567890",
+      "ci": "1234567",
+      "id": 1
     },
     {
       "id": 2,
@@ -87,30 +87,6 @@
       "telefono": "1313234",
       "ci": "1234",
       "id": 11
-    },
-    {
-      "nombre": "Junior",
-      "usuario": "asdwe",
-      "email": "junior.zf.99@gmail.com",
-      "telefono": "422424",
-      "ci": "123434",
-      "id": 12
-    },
-    {
-      "nombre": "Junior zamo",
-      "usuario": "sadasdasd",
-      "email": "A2NGJJCDM@juanpa.bar",
-      "telefono": "123123",
-      "ci": "234342",
-      "id": 13
-    },
-    {
-      "nombre": "rafa",
-      "usuario": "reaffa",
-      "email": "mundonet002+946263838@gmail.com",
-      "telefono": "1313234",
-      "ci": "13613528",
-      "id": 14
     }
   ]
 }

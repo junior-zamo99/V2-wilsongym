@@ -1,5 +1,12 @@
-import {  useNavigate } from "react-router-dom"
+import {  useNavigate, Form, redirect } from "react-router-dom"
 import EditarUsuario from "../pages/EditarUsuario";
+import {eliminarUsuario} from "../api/Usuario"
+
+export async function action({params}){
+   await eliminarUsuario(params.usuarioId)
+  return redirect('/')
+}
+
 
 function Usuario({user}) {
 
@@ -25,12 +32,24 @@ function Usuario({user}) {
                     >
                       Editar
                     </button>
-                    <button 
-                      type="button"
-                      className="text-red-600 hover:text-red-700 uppercase font-bold"
+
+                    <Form
+                      method="post"
+                      action={`/usuario/${user.id}/eliminar`}
+                      onSubmit={(e)=>{
+                        if(!confirm('¡Deseas eliminar este Usuario?')){
+                          e.preventDefault()
+                        }
+                      }}
                     >
-                      Eliminar
-                    </button>
+                        <button 
+                          type="submit"
+                          className="text-red-600 hover:text-red-700 uppercase font-bold"
+                        >
+                          Eliminar
+                        </button>
+                    </Form>
+                    
                   </td>
                 </tr>
     
