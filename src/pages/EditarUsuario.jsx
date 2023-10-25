@@ -40,8 +40,8 @@ const EditarUsuario = () => {
   
   return (
     <div>
-    <h1 className="font-black text-4xl text-blue-900">Editar Usuario</h1>
-    <p className="mt-3">Modifica los Datos del Usuario </p>
+    <h1 className="font-black text-4xl text-center text-blue-900">Editar Usuario</h1>
+    <p className="text-center mt-3">Modifica los Datos del Usuario </p>
     <div className='flex justify-end'>
       <button className=' bg-blue-800 text-white px-3 py-1 uppercase'
         onClick={()=>navigate(-1)}>

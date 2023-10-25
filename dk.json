@@ -6,7 +6,8 @@
       "email": "juanperez@example.com",
       "telefono": "+1234567890",
       "ci": "1234567",
-      "id": 1
+      "id": 1,
+      "Contraseña": "456644435trdf"
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "ci": "2345678",
       "telefono": "+2345678901",
       "email": "mariagonzalez@example.com",
-      "usuario": "mariagonzalez"
+      "usuario": "mariagonzalez",
+      "Contraseña": "456644435trdf"
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "ci": "3456789",
       "telefono": "+3456789012",
       "email": "carlossanchez@example.com",
-      "usuario": "carlossanchez"
+      "usuario": "carlossanchez",
+      "Contraseña": "456644435trdf"
     },
     {
       "id": 4,
@@ -30,7 +33,8 @@
       "ci": "4567890",
       "telefono": "+4567890123",
       "email": "anamartinez@example.com",
-      "usuario": "anamartinez"
+      "usuario": "anamartinez",
+      "Contraseña": "456644435trdf"
     },
     {
       "id": 5,
@@ -38,7 +42,8 @@
       "ci": "5678901",
       "telefono": "+5678901234",
       "email": "luisrodriguez@example.com",
-      "usuario": "luisrodriguez"
+      "usuario": "luisrodriguez",
+      "Contraseña": "456644435trdf"
     },
     {
       "id": 6,
@@ -46,7 +51,8 @@
       "ci": "6789012",
       "telefono": "+6789012345",
       "email": "pablofernandez@example.com",
-      "usuario": "pablofernandez"
+      "usuario": "pablofernandez",
+      "Contraseña": "456644435trdf"
     },
     {
       "id": 7,
@@ -54,7 +60,8 @@
       "ci": "7890123",
       "telefono": "+7890123456",
       "email": "lauralopez@example.com",
-      "usuario": "lauralopez"
+      "usuario": "lauralopez",
+      "Contraseña": "456644435trdf"
     },
     {
       "id": 8,
@@ -62,7 +69,8 @@
       "ci": "8901234",
       "telefono": "+8901234567",
       "email": "diegoramirez@example.com",
-      "usuario": "diegoramirez"
+      "usuario": "diegoramirez",
+      "Contraseña": "456644435trdf"
     },
     {
       "id": 9,
@@ -70,7 +78,8 @@
       "ci": "9012345",
       "telefono": "+9012345678",
       "email": "elenagomez@example.com",
-      "usuario": "elenagomez"
+      "usuario": "elenagomez",
+      "Contraseña": "456644435trdf"
     },
     {
       "id": 10,
@@ -78,7 +87,8 @@
       "ci": "0123456",
       "telefono": "+0123456789",
       "email": "oscartorres@example.com",
-      "usuario": "oscartorres"
+      "usuario": "oscartorres",
+      "Contraseña": "456644435trdf"
     },
     {
       "nombre": "prueba",
@@ -86,7 +96,45 @@
       "email": "mundonet002+452929@gmail.com",
       "telefono": "1313234",
       "ci": "1234",
-      "id": 11
+      "id": 11,
+      "Contraseña": "456644435trdf"
+    }
+  ],
+  "Funcionalidad": [
+    {
+      "id": 1,
+      "nombre": "Crear Usuario",
+      "descripcion": "Permite crar usuarios"
+    },
+    {
+      "id": 2,
+      "nombre": "Eliminar Usuario",
+      "descripcion": "permite eliminar usuario"
+    },
+    {
+      "id": 3,
+      "nombre": " editar usuario",
+      "descripcion": "diegoramirez"
+    },
+    {
+      "id": 4,
+      "nombre": "ver producto",
+      "descripcion": "diegoramirez"
+    },
+    {
+      "id": 5,
+      "nombre": "ver usuario",
+      "descripcion": "diegoramirez"
+    },
+    {
+      "id": 6,
+      "nombre": "comer",
+      "descripcion": "diegoramirez"
+    },
+    {
+      "id": 7,
+      "nombre": "dormir",
+      "descripcion": "diegoramirez"
     }
   ]
 }

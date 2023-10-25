@@ -8,6 +8,10 @@ import Index,{loader as loaderUsuario} from './pages/Index'
 import PaginaError from './components/PaginaError'
 import EditarUsuario, {loader as loaderEditarUsuario, action as actionEditarUsuario} from './pages/EditarUsuario'
 import {action as actionDeleteUser} from "./components/Usuario"
+import {action as actionDeleteFun } from './components/Funcionalidades'
+import ListaFun,{loader as loaderListaFun} from './pages/ListaFun'
+import NuevoFun,{action as actionNuevoFun} from './pages/NuevoFun'
+import EditarFuncionalidad, {loader as  loaderEditFun, action as actionEditFun} from './pages/EditarFuncionalidad'
 
 const router=createBrowserRouter([
 {
@@ -38,7 +42,36 @@ const router=createBrowserRouter([
       path:'/usuario/:usuarioId/eliminar',
       action: actionDeleteUser
 
-    }
+    },
+    {
+      path:'/usuario/rol'
+    },
+    {
+      path:'/rol/nuevo'
+    },
+    {
+      path:'/funcionalidad',
+      element:<ListaFun/>,
+      loader:loaderListaFun  
+    },
+    {
+      path:'/funcionalidad/nuevo',
+      element:<NuevoFun/>,
+      action:actionNuevoFun
+    },
+    {
+      path:'/funcionalidad/:funcionalidadId/eliminar',
+      action: actionDeleteFun
+
+    },
+    {
+      path:'/funcionalidad/:funcionalidadId/editar',
+      element:<EditarFuncionalidad/>,
+      loader:loaderEditFun,
+      action:actionEditFun
+
+    },
+
   ]
 },
 

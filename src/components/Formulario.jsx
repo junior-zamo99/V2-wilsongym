@@ -21,12 +21,26 @@ const Formulario = ({cliente}) => {
                     htmlFor="usuario"
                 >User Name:</label>
                 <input 
-                    id="empresa"
+                    id="Usename"
                     type="text"
                     className="mt-2 block w-full p-3 bg-gray-50"
                     placeholder="Username"
                     name="usuario"
                     defaultValue={cliente?.usuario}
+                />
+            </div>
+            <div className="mb-4">
+                <label
+                    className="text-gray-800"
+                    htmlFor="usuario"
+                >User Name:</label>
+                <input 
+                    id="password"
+                    type="password"
+                    className="mt-2 block w-full p-3 bg-gray-50"
+                    placeholder="password"
+                    name="password"
+                    defaultValue={cliente?.contreña}
                 />
             </div>
 
