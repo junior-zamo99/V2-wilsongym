@@ -2,14 +2,20 @@ import {GetUsuario, actualizarUsuario} from "../api/Usuario"
 import Formulario from "../components/Formulario"
 import { Form, useNavigate, useLoaderData, useActionData, redirect } from "react-router-dom"
 import Error from "../components/Error"
+
+
+
+
 export async function loader({params}){
     
   const user= await GetUsuario(params.usuarioId)
 
- 
+
  
   return user
 }
+
+
 
 export async function action({request, params}){
   const formDate = await request.formData()
@@ -25,6 +31,10 @@ if(Object.keys(errores).length){
  return errores
 }
 
+if (edit.IdRol)
+{
+  edit.IdRol = parseInt(edit.IdRol, 10);
+}
 
 await actualizarUsuario(params.usuarioId ,edit)
 return redirect('/')
@@ -36,7 +46,7 @@ const EditarUsuario = () => {
   const navigate=useNavigate()
   const datos= useLoaderData()
   const errores=useActionData()
-  
+
   
   return (
     <div>

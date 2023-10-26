@@ -4,7 +4,7 @@ import Funcionalidades from "../components/Funcionalidades"
 
 export function loader(){
     const fun=obtenerFuncionalidad()
-    console.log(fun)
+  
     return fun
 }
 

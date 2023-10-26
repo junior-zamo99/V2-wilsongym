@@ -1,6 +1,32 @@
+
+import { useState,useEffect } from "react"
+
+
+
+
+
 const Formulario = ({cliente}) => {
+  
+   
+    const [Roles, setRol]=useState([])
+   
+    useEffect(()=>{
+        obtenerDatos()
+    },[])
+
+    const obtenerDatos=async()=>{
+        const respuesta= await fetch('http://localhost:3000/Rol')
+    const resultado= await respuesta.json()
+    
+    setRol(resultado)
+    }
+    
+  
+  
     return (
+        
         <>
+       
             <div className="mb-4">
                 <label
                     className="text-gray-800"
@@ -33,7 +59,7 @@ const Formulario = ({cliente}) => {
                 <label
                     className="text-gray-800"
                     htmlFor="usuario"
-                >User Name:</label>
+                >Contraseña:</label>
                 <input 
                     id="password"
                     type="password"
@@ -88,7 +114,24 @@ const Formulario = ({cliente}) => {
                     name="ci"
                     defaultValue={cliente?.ci}
                 />
+                
+                
             </div>
+            <div className="mb-4">
+                <label
+                    className="text-gray-800"
+                    htmlFor="Rol"
+                >Rol:</label>
+                <select name="IdRol" id="IdRol">
+                    {
+                        Roles.map(rol =>(
+                            <option key={rol.id} value={rol.id}>{rol.nombre}</option>
+                        ))
+                    }
+                
+                </select>
+                
+                </div>
         </>
     )
 }

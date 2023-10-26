@@ -7,7 +7,8 @@
       "telefono": "+1234567890",
       "ci": "1234567",
       "id": 1,
-      "Contraseña": "456644435trdf"
+      "Contraseña": "456644435trdf",
+      "idRol": ""
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "telefono": "+2345678901",
       "email": "mariagonzalez@example.com",
       "usuario": "mariagonzalez",
-      "Contraseña": "456644435trdf"
+      "Contraseña": "456644435trdf",
+      "idRol": ""
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "telefono": "+3456789012",
       "email": "carlossanchez@example.com",
       "usuario": "carlossanchez",
-      "Contraseña": "456644435trdf"
+      "Contraseña": "456644435trdf",
+      "idRol": ""
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "telefono": "+4567890123",
       "email": "anamartinez@example.com",
       "usuario": "anamartinez",
-      "Contraseña": "456644435trdf"
+      "Contraseña": "456644435trdf",
+      "idRol": ""
     },
     {
       "id": 5,
@@ -91,13 +95,94 @@
       "Contraseña": "456644435trdf"
     },
     {
-      "nombre": "prueba",
-      "usuario": "prueba",
-      "email": "mundonet002+452929@gmail.com",
-      "telefono": "1313234",
-      "ci": "1234",
-      "id": 11,
-      "Contraseña": "456644435trdf"
+      "nombre": "prueba5",
+      "usuario": "asdasdas",
+      "password": "1432fasdfsd",
+      "email": "juanperez@example.com",
+      "telefono": "46645456",
+      "ci": "324343",
+      "IdRol": "2",
+      "id": 11
+    },
+    {
+      "nombre": "prueba 8",
+      "usuario": "prueba8",
+      "password": "121212",
+      "email": "juanperez@example.com",
+      "telefono": "46645456",
+      "ci": "12123",
+      "IdRol": 3,
+      "id": 12
+    },
+    {
+      "nombre": "prueba9",
+      "usuario": "prueba8",
+      "password": "1232",
+      "email": "juanperez@example.com",
+      "telefono": "46645456",
+      "ci": "12123",
+      "IdRol": 4,
+      "id": 13
+    },
+    {
+      "nombre": "asdasd",
+      "usuario": "asdasdas",
+      "password": "sadsd",
+      "email": "juanperez@example.com",
+      "telefono": "46645456",
+      "ci": "234234",
+      "IdRol": 3,
+      "id": 14
+    },
+    {
+      "nombre": "Junior zamo",
+      "usuario": "asdwe",
+      "password": "11212",
+      "email": "juanperez@example.com",
+      "telefono": "46645456",
+      "ci": "13613528",
+      "IdRol": 2,
+      "id": 15
+    },
+    {
+      "nombre": "pruebaaaaa",
+      "usuario": "asdwe",
+      "password": "232",
+      "email": "juanperez@example.com",
+      "telefono": "46645456",
+      "ci": "13613528",
+      "IdRol": null,
+      "id": 16
+    },
+    {
+      "nombre": "pruebaaaaasdae4",
+      "usuario": "asdwe",
+      "password": "a2323",
+      "email": "juanperez@example.com",
+      "telefono": "46645456",
+      "ci": "13613528",
+      "IdRol": 7,
+      "id": 17
+    },
+    {
+      "nombre": "pruebaaaaasdae666",
+      "usuario": "asdwe",
+      "password": "123",
+      "email": "juanperez@example.com",
+      "telefono": "46645456",
+      "ci": "13613528",
+      "IdRol": 1,
+      "id": 18
+    },
+    {
+      "nombre": "puebaaaaaaaaaaaaa",
+      "usuario": "aaaaaaaaaaaa",
+      "password": "aaaaaaaaaaaa",
+      "email": "juanperez@example.com",
+      "telefono": "46645456",
+      "ci": "111111111111",
+      "IdRol": 13,
+      "id": 19
     }
   ],
   "Funcionalidad": [
@@ -135,6 +220,136 @@
       "id": 7,
       "nombre": "dormir",
       "descripcion": "diegoramirez"
+    },
+    {
+      "nombre": "Junior",
+      "descripcion": "hola",
+      "id": 8
+    }
+  ],
+  "Rol": [
+    {
+      "id": 1,
+      "nombre": "Recepcionista",
+      "permiso": ""
+    },
+    {
+      "id": 2,
+      "nombre": "Limpieza",
+      "permiso": ""
+    },
+    {
+      "id": 3,
+      "nombre": " Administrador",
+      "permiso": ""
+    },
+    {
+      "id": 4,
+      "nombre": "Entrenador",
+      "permiso": ""
+    },
+    {
+      "nombre": "prueba1",
+      "id": 5,
+      "permiso": ""
+    },
+    {
+      "nombre": "Prueba2",
+      "id": 6,
+      "permiso": ""
+    },
+    {
+      "nombre": "hola",
+      "id": 7,
+      "permiso": ""
+    },
+    {
+      "nombre": "Junior zamo",
+      "permiso": 6,
+      "id": 8
+    },
+    {
+      "nombre": "prueba",
+      "permiso": 4,
+      "id": 9
+    },
+    {
+      "nombre": "prueba",
+      "permiso": 8,
+      "id": 10
+    },
+    {
+      "nombre": "Junior",
+      "permiso": 6,
+      "id": 11
+    },
+    {
+      "nombre": "prueba",
+      "permiso": 1,
+      "id": 12
+    },
+    {
+      "nombre": "sd",
+      "permiso": "2,4,5,3,1",
+      "id": 13
+    },
+    {
+      "nombre": "juan perez dominguez",
+      "permiso": [
+        6,
+        2
+      ],
+      "id": 14
+    },
+    {
+      "nombre": "pruebaaaa",
+      "permiso": [
+        1,
+        2,
+        3,
+        5,
+        4
+      ],
+      "id": 15
+    },
+    {
+      "nombre": "puebbbb",
+      "permiso": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "id": 16
+    },
+    {
+      "nombre": "asdasdasdapppppppppppp",
+      "permiso": [
+        1,
+        2,
+        3,
+        7
+      ],
+      "id": 17
+    },
+    {
+      "nombre": "222222222222",
+      "permiso": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "id": 18
+    },
+    {
+      "nombre": "65666",
+      "permiso": [
+        3,
+        7
+      ],
+      "id": 19
     }
   ]
 }

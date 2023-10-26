@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Layout from './components/layout'
-import NuevoCliente,{action as nuevoCliente} from './pages/NuevoCliente'
+import NuevoCliente,{action as nuevoCliente, loader as loaderGetRol} from './pages/NuevoCliente'
 import Index,{loader as loaderUsuario} from './pages/Index'
 import PaginaError from './components/PaginaError'
 import EditarUsuario, {loader as loaderEditarUsuario, action as actionEditarUsuario} from './pages/EditarUsuario'
@@ -12,6 +12,9 @@ import {action as actionDeleteFun } from './components/Funcionalidades'
 import ListaFun,{loader as loaderListaFun} from './pages/ListaFun'
 import NuevoFun,{action as actionNuevoFun} from './pages/NuevoFun'
 import EditarFuncionalidad, {loader as  loaderEditFun, action as actionEditFun} from './pages/EditarFuncionalidad'
+import NuevoRol,{action as actionNuevoRol} from './pages/NuevoRol'
+import ListaRol,{loader as loaderListaRol} from './pages/ListaRol'
+
 
 const router=createBrowserRouter([
 {
@@ -28,6 +31,7 @@ const router=createBrowserRouter([
       
         path:'/usuario/nuevo',
         element: <NuevoCliente/>,
+        loader: loaderGetRol,
         action: nuevoCliente
         
       
@@ -44,10 +48,15 @@ const router=createBrowserRouter([
 
     },
     {
-      path:'/usuario/rol'
+      path:'/usuario/rol',
+      element:<ListaRol/>,
+      loader: loaderListaRol
+      
     },
     {
-      path:'/rol/nuevo'
+      path:'/rol/nuevo',
+      element:<NuevoRol/>,
+      action:actionNuevoRol
     },
     {
       path:'/funcionalidad',
@@ -71,6 +80,10 @@ const router=createBrowserRouter([
       action:actionEditFun
 
     },
+   
+   
+   
+    
 
   ]
 },
