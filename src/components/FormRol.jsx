@@ -2,10 +2,11 @@ import React from 'react'
 import { useState,useEffect } from "react"
 
 
-const FormRol = () => {
+const FormRol = ({rol}) => {
 
   const [funcionalidad, setfuncionalidad]=useState([])
   const [funcionalidadesSeleccionadas, setFuncionalidadesSeleccionadas] = useState([]);
+ 
   useEffect(()=>{
       obtenerDatos()
   },[])
@@ -15,18 +16,23 @@ const FormRol = () => {
   const resultado= await respuesta.json()
   
   setfuncionalidad(resultado)
+  if (rol.permiso) {
+    setFuncionalidadesSeleccionadas(rol.permiso);
+  }
   }
   const handleCheckboxChange = (funcionalidadId) => {
-    if (funcionalidadesSeleccionadas.includes(funcionalidadId)) {
-      // Deseleccionar una funcionalidad
-      setFuncionalidadesSeleccionadas(funcionalidadesSeleccionadas.filter((id) => id !== funcionalidadId));
-    } else {
-      // Seleccionar una funcionalidad
-      setFuncionalidadesSeleccionadas([...funcionalidadesSeleccionadas, funcionalidadId]);
-    }
+    setFuncionalidadesSeleccionadas((prevSelected) => {
+      if (prevSelected.includes(funcionalidadId)) {
+        // Deseleccionar una funcionalidad
+        return prevSelected.filter((id) => id !== funcionalidadId);
+      } else {
+        // Seleccionar una funcionalidad
+        return [...prevSelected, funcionalidadId];
+      }
+    });
     
 
-    console.log(funcionalidadesSeleccionadas)
+   
   };
 
  
@@ -43,6 +49,7 @@ const FormRol = () => {
                className="mt-2 block w-full p-3 bg-gray-50"
                placeholder="Nombre de la Funcionalidad"
                name="nombre"
+               defaultValue={rol?.nombre}
               
              
            />
@@ -54,13 +61,16 @@ const FormRol = () => {
           {funcionalidad.map((fun) => (
             <div key={fun.id}>
               <label>
-                <input
+                <input 
+                
                 name='permiso'
                 id='permiso'
                   type="checkbox"
+                  className=' form-checkbox checked:border-green-500 '
                   value={funcionalidadesSeleccionadas}
                   checked={funcionalidadesSeleccionadas.includes(fun.id)}
                   onChange={() => handleCheckboxChange(fun.id)}
+                  
                   
                 />
                 {fun.nombre}

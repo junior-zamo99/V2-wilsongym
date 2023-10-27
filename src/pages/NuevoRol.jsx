@@ -1,6 +1,6 @@
 import { useNavigate, Form, useActionData, redirect } from 'react-router-dom'
 import Error from '../components/Error';
-import FormRol from '../components/FormRol';
+import FormCrearRol from '../components/FormCrearRol';
 import{agregarRol} from "../api/Rol"
 export async function action({request}){
     const formDate = await request.formData()
@@ -45,7 +45,7 @@ const NuevoRol = () => {
           <div className='bg-white shadow rounded-md md:w-3/4 mx-auto px-5 py-10 '>
                {errores?.length && errores.map((error, i)=> <Error key={i}>{error}</Error>)}
                 <Form  method='post'>
-                    <FormRol/>
+                    <FormCrearRol/>
                     <input type="submit" className='mt-5 w-full bg-blue-800 p-3 uppercase font-bold text-white text-lg' 
                     value="registrar" />
                 </Form>

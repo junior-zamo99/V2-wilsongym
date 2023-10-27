@@ -1,5 +1,5 @@
 import {  useNavigate, Form, redirect } from "react-router-dom"
-import EditarUsuario from "../pages/EditarUsuario";
+
 import {eliminarUsuario} from "../api/Usuario"
 
 export async function action({params}){

@@ -1,40 +1,43 @@
-import {GetFuncionalidad, actualizarFuncionalidad} from "../api/Funcionalidad"
 import { Form, useNavigate, useLoaderData, useActionData, redirect } from "react-router-dom"
 import Error from "../components/Error"
-import FomuFunci from "../components/FomuFunci"
+import{GetRol, actualizarRol} from "../api/Rol"
+import FormRol from "../components/FormRol"
 
 
 export async function loader({params}){
     
-  const user= await GetFuncionalidad(params.funcionalidadId)
-
- 
- 
-  return user
-}
-
-export async function action({request, params}){
-  const formDate = await request.formData()
-
-const edit=Object.fromEntries(formDate)
-
-const errores=[]
-if(Object.values(edit).includes('')){
-  errores.push('todos los campos son obligatorios')
-}
-
-if(Object.keys(errores).length){
- return errores
-}
-
-
-await actualizarFuncionalidad(params.funcionalidadId ,edit)
-return redirect('/funcionalidad')
-}
-
-
-const EditarFuncionalidad = () => {
+    const user= await GetRol(params.rolId)
   
+   
+   
+    return user
+  }
+  
+  export async function action({request, params}){
+    const formDate = await request.formData()
+  
+  const edit=Object.fromEntries(formDate)
+  
+  if (edit.permiso)
+  {
+    edit.permiso = edit.permiso.split(',').map(Number) ;
+  }
+  const errores=[]
+  if(Object.values(edit).includes('')){
+    errores.push('todos los campos son obligatorios')
+  }
+  
+  if(Object.keys(errores).length){
+   return errores
+  }
+  
+  
+  await actualizarRol(params.rolId ,edit)
+  return redirect('/usuario/rol')
+  }
+
+
+const EditarRol = () => {
     const navigate=useNavigate()
     const datos= useLoaderData()
     const errores=useActionData()
@@ -54,8 +57,8 @@ const EditarFuncionalidad = () => {
       <div className='bg-white shadow rounded-md md:w-3/4 mx-auto px-5 py-10 '>
          {errores?.length && errores.map((error, i)=> <Error key={i}>{error}</Error>)}
             <Form  method='post'>
-            <FomuFunci
-                funci={datos}
+            <FormRol
+                rol={datos}
             />
                 <input type="submit" className='mt-5 w-full bg-blue-800 p-3 uppercase font-bold text-white text-lg' 
                 value="Actualizar Usuario" />
@@ -67,4 +70,4 @@ const EditarFuncionalidad = () => {
   )
 }
 
-export default EditarFuncionalidad
+export default EditarRol

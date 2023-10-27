@@ -122,7 +122,7 @@ const Formulario = ({cliente}) => {
                     className="text-gray-800"
                     htmlFor="Rol"
                 >Rol:</label>
-                <select name="IdRol" id="IdRol">
+                <select className="border rounded-md p-2 focus:ring-2 focus:ring-indigo-300 focus:border-indigo-400" name="IdRol" id="IdRol">
                     {
                         Roles.map(rol =>(
                             <option key={rol.id} value={rol.id}>{rol.nombre}</option>

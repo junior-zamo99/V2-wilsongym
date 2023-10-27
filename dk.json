@@ -1,14 +1,9 @@
 {
   "Usuario": [
     {
-      "nombre": "juan perez dominguez messi",
-      "usuario": "juanperez",
-      "email": "juanperez@example.com",
-      "telefono": "+1234567890",
-      "ci": "1234567",
-      "id": 1,
-      "Contraseña": "456644435trdf",
-      "idRol": ""
+      "nombre": "ddd",
+      "descripcion": "ddd",
+      "id": 1
     },
     {
       "id": 2,
@@ -220,18 +215,17 @@
       "id": 7,
       "nombre": "dormir",
       "descripcion": "diegoramirez"
-    },
-    {
-      "nombre": "Junior",
-      "descripcion": "hola",
-      "id": 8
     }
   ],
   "Rol": [
     {
-      "id": 1,
-      "nombre": "Recepcionista",
-      "permiso": ""
+      "nombre": "juan perez dominguez",
+      "permiso": [
+        1,
+        4,
+        2
+      ],
+      "id": 1
     },
     {
       "id": 2,
@@ -344,12 +338,22 @@
       "id": 18
     },
     {
-      "nombre": "65666",
+      "nombre": "prueba 112",
       "permiso": [
-        3,
-        7
+        1,
+        2,
+        3
       ],
       "id": 19
+    },
+    {
+      "nombre": "prueba123455623",
+      "permiso": [
+        4,
+        6,
+        7
+      ],
+      "id": 20
     }
   ]
 }

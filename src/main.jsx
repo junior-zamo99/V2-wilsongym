@@ -14,7 +14,9 @@ import NuevoFun,{action as actionNuevoFun} from './pages/NuevoFun'
 import EditarFuncionalidad, {loader as  loaderEditFun, action as actionEditFun} from './pages/EditarFuncionalidad'
 import NuevoRol,{action as actionNuevoRol} from './pages/NuevoRol'
 import ListaRol,{loader as loaderListaRol} from './pages/ListaRol'
-
+import {action as actionDeleteRol} from "./components/Rol"
+import EditarRol, {loader as loaderEditRol, action as  actionEditRol} from './pages/EditarRol'
+import VerFunRol, {loader as loaderVerFunRol} from './pages/VerFunRol'
 
 const router=createBrowserRouter([
 {
@@ -80,6 +82,23 @@ const router=createBrowserRouter([
       action:actionEditFun
 
     },
+    {
+      path:'/rol/:rolId/eliminar',
+      action: actionDeleteRol
+
+    },
+    {
+      path:'/rol/:rolId/editar',
+      element:<EditarRol/>,
+      loader:loaderEditRol,
+      action:actionEditRol
+
+    },
+    {
+      path:'/rol/:rolId/ver',
+      element:<VerFunRol/>,
+      loader:loaderVerFunRol
+    }
    
    
    
